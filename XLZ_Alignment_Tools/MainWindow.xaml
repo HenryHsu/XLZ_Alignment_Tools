@@ -1,0 +1,33 @@
+﻿<Window x:Class="XLZ_Alignment_Tools.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XLZ_Alignment_Tools"
+        mc:Ignorable="d"
+        Title="MainWindow" Name="MainWin" Height="480" Width="640">
+    <Grid>
+        <GroupBox x:Name="groupBox" Header="Description" Margin="5,5,5,0" VerticalAlignment="Top" Height="70"/>
+        <GroupBox x:Name="groupBox1" Header="File Folder" Margin="5,80,5,0" VerticalAlignment="Top" Height="98">
+            <Grid Height="77" Margin="1,1,1,1" VerticalAlignment="Bottom">
+                <Label x:Name="SRC_File_label" Content="Source File :" HorizontalAlignment="Left" Margin="108,5,0,42" Width="75"/>
+                <TextBox x:Name="SRC_File_tbx" Margin="185,8,17,46" TextWrapping="Wrap" Text="E:\Working\SIN\ENU\SNLOffice\ErrorResources.resx"/>
+                <Label x:Name="TGT_File_label1" Content="Target File :" Margin="108,41,0,6" HorizontalAlignment="Left" Width="75"/>
+                <TextBox x:Name="TGT_File_tbx" Margin="185,44,17,10" TextWrapping="Wrap" Text="E:\Working\SIN\CHS\SNLOffice\CHS\ErrorResources.zh.resx"/>
+                <RadioButton x:Name="ByMapplist_rBtn" Content="By File List" HorizontalAlignment="Left" Margin="10,12,0,0" VerticalAlignment="Top" Checked="ByMapplist_rBtn_Checked"/>
+                <RadioButton x:Name="ByFile_rBtn" Content="By Single File" HorizontalAlignment="Left" Margin="10,32,0,0" VerticalAlignment="Top" Checked="ByFile_rBtn_Checked"/>
+                <GridSplitter x:Name="gridSplitter" HorizontalAlignment="Left" Margin="100,0,0,0" Width="3" Background="#FFDC8A8A" />
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="groupBox2" Header="Language Option" Margin="5,182,5,0" VerticalAlignment="Top" Height="88">
+            <Grid Height="63" Margin="1,1,1,1" VerticalAlignment="Top">
+                <Label x:Name="SRC_Lang_label" Content="Source Language : " HorizontalAlignment="Left" Margin="1,2,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="TGT_Lang_label" Content="Target Language : " HorizontalAlignment="Left" Margin="3,32,0,0" VerticalAlignment="Top"/>
+                <ComboBox x:Name="SRC_Cbox" HorizontalAlignment="Left" Margin="110,4,0,0" VerticalAlignment="Top" Width="auto" Loaded="LangaugeCode_Loaded"/>
+                <ComboBox x:Name="TGT_Cbox" HorizontalAlignment="Left" Margin="110,35,0,0" VerticalAlignment="Top" Width="auto" Loaded="LangaugeCode_Loaded"/>
+            </Grid>
+        </GroupBox>
+
+        <Button x:Name="Generate_btn" Content="Generate" Margin="0,0,10,19" Click="Generate_Click" Height="22" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="auto"/>
+    </Grid>
+</Window>

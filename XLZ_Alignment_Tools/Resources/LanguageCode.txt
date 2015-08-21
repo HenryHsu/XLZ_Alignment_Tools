@@ -1,0 +1,351 @@
+﻿Afrikaans ->af
+Afrikaans (South Africa) ->af-ZA
+Albanian ->sq
+Albanian (Albania) ->sq-AL
+Alsatian ->gsw
+Alsatian (France) ->gsw-FR
+Amharic ->am
+Amharic (Ethiopia) ->am-ET
+Arabic‎ ->ar
+Arabic (Algeria)‎ ->ar-DZ
+Arabic (Bahrain)‎ ->ar-BH
+Arabic (Egypt)‎ ->ar-EG
+Arabic (Iraq)‎ ->ar-IQ
+Arabic (Jordan)‎ ->ar-JO
+Arabic (Kuwait)‎ ->ar-KW
+Arabic (Lebanon)‎ ->ar-LB
+Arabic (Libya)‎ ->ar-LY
+Arabic (Morocco)‎ ->ar-MA
+Arabic (Oman)‎ ->ar-OM
+Arabic (Qatar)‎ ->ar-QA
+Arabic (Saudi Arabia)‎ ->ar-SA
+Arabic (Syria)‎ ->ar-SY
+Arabic (Tunisia)‎ ->ar-TN
+Arabic (U.A.E.)‎ ->ar-AE
+Arabic (Yemen)‎ ->ar-YE
+Armenian ->hy
+Armenian (Armenia) ->hy-AM
+Assamese ->as
+Assamese (India) ->as-IN
+Azeri ->az
+Azeri (Cyrillic) ->az-Cyrl
+Azeri (Cyrillic, Azerbaijan) ->az-Cyrl-AZ
+Azeri (Latin) ->az-Latn
+Azeri (Latin, Azerbaijan) ->az-Latn-AZ
+Bashkir ->ba
+Bashkir (Russia) ->ba-RU
+Basque ->eu
+Basque (Basque) ->eu-ES
+Belarusian ->be
+Belarusian (Belarus) ->be-BY
+Bengali ->bn
+Bengali (Bangladesh) ->bn-BD
+Bengali (India) ->bn-IN
+Bosnian ->bs
+Bosnian (Cyrillic) ->bs-Cyrl
+Bosnian (Cyrillic, Bosnia and Herzegovina) ->bs-Cyrl-BA
+Bosnian (Latin) ->bs-Latn
+Bosnian (Latin, Bosnia and Herzegovina) ->bs-Latn-BA
+Breton ->br
+Breton (France) ->br-FR
+Bulgarian ->bg
+Bulgarian (Bulgaria) ->bg-BG
+Catalan ->ca
+Catalan (Catalan) ->ca-ES
+Chinese ->zh
+Chinese (Simplified) ->zh-Hans
+Chinese (Simplified, PRC) ->zh-CN
+Chinese (Simplified, Singapore) ->zh-SG
+Chinese (Traditional) ->zh-Hant
+Chinese (Traditional, Hong Kong S.A.R.) ->zh-HK
+Chinese (Traditional, Macao S.A.R.) ->zh-MO
+Chinese (Traditional, Taiwan) ->zh-TW
+Corsican ->co
+Corsican (France) ->co-FR
+Croatian ->hr
+Croatian (Croatia) ->hr-HR
+Croatian (Latin, Bosnia and Herzegovina) ->hr-BA
+Czech ->cs
+Czech (Czech Republic) ->cs-CZ
+Danish ->da
+Danish (Denmark) ->da-DK
+Dari‎ ->prs
+Dari (Afghanistan)‎ ->prs-AF
+Divehi‎ ->dv
+Divehi (Maldives)‎ ->dv-MV
+Dutch ->nl
+Dutch (Belgium) ->nl-BE
+Dutch (Netherlands) ->nl-NL
+English ->en
+English (Australia) ->en-AU
+English (Belize) ->en-BZ
+English (Canada) ->en-CA
+English (Caribbean) ->en-029
+English (India) ->en-IN
+English (Ireland) ->en-IE
+English (Jamaica) ->en-JM
+English (Malaysia) ->en-MY
+English (New Zealand) ->en-NZ
+English (Republic of the Philippines) ->en-PH
+English (Singapore) ->en-SG
+English (South Africa) ->en-ZA
+English (Trinidad and Tobago) ->en-TT
+English (United Kingdom) ->en-GB
+English (United States) ->en-US
+English (Zimbabwe) ->en-ZW
+Estonian ->et
+Estonian (Estonia) ->et-EE
+Faroese ->fo
+Faroese (Faroe Islands) ->fo-FO
+Filipino ->fil
+Filipino (Philippines) ->fil-PH
+Finnish ->fi
+Finnish (Finland) ->fi-FI
+French ->fr
+French (Belgium) ->fr-BE
+French (Canada) ->fr-CA
+French (France) ->fr-FR
+French (Luxembourg) ->fr-LU
+French (Monaco) ->fr-MC
+French (Switzerland) ->fr-CH
+Frisian ->fy
+Frisian (Netherlands) ->fy-NL
+Galician ->gl
+Galician (Galician) ->gl-ES
+Georgian ->ka
+Georgian (Georgia) ->ka-GE
+German ->de
+German (Austria) ->de-AT
+German (Germany) ->de-DE
+German (Liechtenstein) ->de-LI
+German (Luxembourg) ->de-LU
+German (Switzerland) ->de-CH
+Greek ->el
+Greek (Greece) ->el-GR
+Greenlandic ->kl
+Greenlandic (Greenland) ->kl-GL
+Gujarati ->gu
+Gujarati (India) ->gu-IN
+Hausa ->ha
+Hausa (Latin) ->ha-Latn
+Hausa (Latin, Nigeria) ->ha-Latn-NG
+Hebrew‎ ->he
+Hebrew (Israel)‎ ->he-IL
+Hindi ->hi
+Hindi (India) ->hi-IN
+Hungarian ->hu
+Hungarian (Hungary) ->hu-HU
+Icelandic ->is
+Icelandic (Iceland) ->is-IS
+Igbo ->ig
+Igbo (Nigeria) ->ig-NG
+Indonesian ->id
+Indonesian (Indonesia) ->id-ID
+Inuktitut ->iu
+Inuktitut (Latin) ->iu-Latn
+Inuktitut (Latin, Canada) ->iu-Latn-CA
+Inuktitut (Syllabics) ->iu-Cans
+Inuktitut (Syllabics, Canada) ->iu-Cans-CA
+Irish ->ga
+Irish (Ireland) ->ga-IE
+isiXhosa ->xh
+isiXhosa (South Africa) ->xh-ZA
+isiZulu ->zu
+isiZulu (South Africa) ->zu-ZA
+Italian ->it
+Italian (Italy) ->it-IT
+Italian (Switzerland) ->it-CH
+Japanese ->ja
+Japanese (Japan) ->ja-JP
+Kannada ->kn
+Kannada (India) ->kn-IN
+Kazakh ->kk
+Kazakh (Kazakhstan) ->kk-KZ
+Khmer ->km
+Khmer (Cambodia) ->km-KH
+K'iche ->qut
+K'iche (Guatemala) ->qut-GT
+Kinyarwanda ->rw
+Kinyarwanda (Rwanda) ->rw-RW
+Kiswahili ->sw
+Kiswahili (Kenya) ->sw-KE
+Konkani ->kok
+Konkani (India) ->kok-IN
+Korean ->ko
+Korean (Korea) ->ko-KR
+Kyrgyz ->ky
+Kyrgyz (Kyrgyzstan) ->ky-KG
+Lao ->lo
+Lao (Lao P.D.R.) ->lo-LA
+Latvian ->lv
+Latvian (Latvia) ->lv-LV
+Lithuanian ->lt
+Lithuanian (Lithuania) ->lt-LT
+Lower Sorbian ->dsb
+Lower Sorbian (Germany) ->dsb-DE
+Luxembourgish ->lb
+Luxembourgish (Luxembourg) ->lb-LU
+Macedonian (Former Yugoslav Republic of Macedonia) ->mk-MK
+Macedonian (FYROM) ->mk
+Malay ->ms
+Malay (Brunei Darussalam) ->ms-BN
+Malay (Malaysia) ->ms-MY
+Malayalam ->ml
+Malayalam (India) ->ml-IN
+Maltese ->mt
+Maltese (Malta) ->mt-MT
+Maori ->mi
+Maori (New Zealand) ->mi-NZ
+Mapudungun ->arn
+Mapudungun (Chile) ->arn-CL
+Marathi ->mr
+Marathi (India) ->mr-IN
+Mohawk ->moh
+Mohawk (Mohawk) ->moh-CA
+Mongolian (Cyrillic) ->mn
+Mongolian (Cyrillic) ->mn-Cyrl
+Mongolian (Cyrillic, Mongolia) ->mn-MN
+Mongolian (Traditional Mongolian) ->mn-Mong
+Mongolian (Traditional Mongolian, PRC) ->mn-Mong-CN
+Nepali ->ne
+Nepali (Nepal) ->ne-NP
+Norwegian ->no
+Norwegian (Bokmål) ->nb
+Norwegian (Nynorsk) ->nn
+Norwegian, Bokmål (Norway) ->nb-NO
+Norwegian, Nynorsk (Norway) ->nn-NO
+Occitan ->oc
+Occitan (France) ->oc-FR
+Oriya ->or
+Oriya (India) ->or-IN
+Pashto‎ ->ps
+Pashto (Afghanistan)‎ ->ps-AF
+Persian‎ ->fa
+Persian‎ ->fa-IR
+Polish ->pl
+Polish (Poland) ->pl-PL
+Portuguese ->pt
+Portuguese (Brazil) ->pt-BR
+Portuguese (Portugal) ->pt-PT
+Punjabi ->pa
+Punjabi (India) ->pa-IN
+Quechua ->quz
+Quechua (Bolivia) ->quz-BO
+Quechua (Ecuador) ->quz-EC
+Quechua (Peru) ->quz-PE
+Romanian ->ro
+Romanian (Romania) ->ro-RO
+Romansh ->rm
+Romansh (Switzerland) ->rm-CH
+Russian ->ru
+Russian (Russia) ->ru-RU
+Sami (Inari) ->smn
+Sami (Lule) ->smj
+Sami (Northern) ->se
+Sami (Skolt) ->sms
+Sami (Southern) ->sma
+Sami, Inari (Finland) ->smn-FI
+Sami, Lule (Norway) ->smj-NO
+Sami, Lule (Sweden) ->smj-SE
+Sami, Northern (Finland) ->se-FI
+Sami, Northern (Norway) ->se-NO
+Sami, Northern (Sweden) ->se-SE
+Sami, Skolt (Finland) ->sms-FI
+Sami, Southern (Norway) ->sma-NO
+Sami, Southern (Sweden) ->sma-SE
+Sanskrit ->sa
+Sanskrit (India) ->sa-IN
+Scottish Gaelic ->gd
+Scottish Gaelic (United Kingdom) ->gd-GB
+Serbian ->sr
+Serbian (Cyrillic) ->sr-Cyrl
+Serbian (Cyrillic, Bosnia and Herzegovina) ->sr-Cyrl-BA
+Serbian (Cyrillic, Montenegro) ->sr-Cyrl-ME
+Serbian (Cyrillic, Serbia and Montenegro (Former)) ->sr-Cyrl-CS
+Serbian (Cyrillic, Serbia) ->sr-Cyrl-RS
+Serbian (Latin) ->sr-Latn
+Serbian (Latin, Bosnia and Herzegovina) ->sr-Latn-BA
+Serbian (Latin, Montenegro) ->sr-Latn-ME
+Serbian (Latin, Serbia and Montenegro (Former)) ->sr-Latn-CS
+Serbian (Latin, Serbia) ->sr-Latn-RS
+Sesotho sa Leboa ->nso
+Sesotho sa Leboa (South Africa) ->nso-ZA
+Setswana ->tn
+Setswana (South Africa) ->tn-ZA
+Sinhala ->si
+Sinhala (Sri Lanka) ->si-LK
+Slovak ->sk
+Slovak (Slovakia) ->sk-SK
+Slovenian ->sl
+Slovenian (Slovenia) ->sl-SI
+Spanish ->es
+Spanish (Argentina) ->es-AR
+Spanish (Bolivia) ->es-BO
+Spanish (Chile) ->es-CL
+Spanish (Colombia) ->es-CO
+Spanish (Costa Rica) ->es-CR
+Spanish (Dominican Republic) ->es-DO
+Spanish (Ecuador) ->es-EC
+Spanish (El Salvador) ->es-SV
+Spanish (Guatemala) ->es-GT
+Spanish (Honduras) ->es-HN
+Spanish (Mexico) ->es-MX
+Spanish (Nicaragua) ->es-NI
+Spanish (Panama) ->es-PA
+Spanish (Paraguay) ->es-PY
+Spanish (Peru) ->es-PE
+Spanish (Puerto Rico) ->es-PR
+Spanish (Spain, International Sort) ->es-ES
+Spanish (United States) ->es-US
+Spanish (Uruguay) ->es-UY
+Spanish (Venezuela) ->es-VE
+Swedish ->sv
+Swedish (Finland) ->sv-FI
+Swedish (Sweden) ->sv-SE
+Syriac‎ ->syr
+Syriac (Syria)‎ ->syr-SY
+Tajik (Cyrillic) ->tg
+Tajik (Cyrillic) ->tg-Cyrl
+Tajik (Cyrillic, Tajikistan) ->tg-Cyrl-TJ
+Tamazight ->tzm
+Tamazight (Latin) ->tzm-Latn
+Tamazight (Latin, Algeria) ->tzm-Latn-DZ
+Tamil ->ta
+Tamil (India) ->ta-IN
+Tatar ->tt
+Tatar (Russia) ->tt-RU
+Telugu ->te
+Telugu (India) ->te-IN
+Thai ->th
+Thai (Thailand) ->th-TH
+Tibetan ->bo
+Tibetan (PRC) ->bo-CN
+Turkish ->tr
+Turkish (Turkey) ->tr-TR
+Turkmen ->tk
+Turkmen (Turkmenistan) ->tk-TM
+Ukrainian ->uk
+Ukrainian (Ukraine) ->uk-UA
+Upper Sorbian ->hsb
+Upper Sorbian (Germany) ->hsb-DE
+Urdu‎ ->ur
+Urdu (Islamic Republic of Pakistan)‎ ->ur-PK
+Uyghur‎ ->ug
+Uyghur (PRC)‎ ->ug-CN
+Uzbek (Cyrillic) ->uz-Cyrl
+Uzbek (Cyrillic, Uzbekistan) ->uz-Cyrl-UZ
+Uzbek (Latin) ->uz
+Uzbek (Latin) ->uz-Latn
+Uzbek (Latin, Uzbekistan) ->uz-Latn-UZ
+Vietnamese ->vi
+Vietnamese (Vietnam) ->vi-VN
+Welsh ->cy
+Welsh (United Kingdom) ->cy-GB
+Wolof ->wo
+Wolof (Senegal) ->wo-SN
+Yakut ->sah
+Yakut (Russia) ->sah-RU
+Yi ->ii
+Yi (PRC) ->ii-CN
+Yoruba ->yo
+Yoruba (Nigeria) ->yo-NG
