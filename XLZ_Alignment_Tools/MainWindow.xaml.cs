@@ -51,6 +51,11 @@ namespace XLZ_Alignment_Tools
 
             TGT_File_tbx.IsEnabled = true;
             TGT_File_tbx.Visibility = Visibility.Visible;
+
+            SRC_Column_label.IsEnabled = false;
+            SRC_Column_tbx.IsEnabled = false;
+            TGT_Column_label.IsEnabled = false;
+            TGT_Column_tbx.IsEnabled = false;
         }
 
         private void ByMapplist_rBtn_Checked(object sender, RoutedEventArgs e)
@@ -60,6 +65,11 @@ namespace XLZ_Alignment_Tools
             TGT_File_label1.Visibility = Visibility.Hidden;
             TGT_File_tbx.IsEnabled = false;
             TGT_File_tbx.Visibility = Visibility.Hidden;
+
+            SRC_Column_label.IsEnabled = false;
+            SRC_Column_tbx.IsEnabled = false;
+            TGT_Column_label.IsEnabled = false;
+            TGT_Column_tbx.IsEnabled = false;
         }
 
         private void ByExcel_rBtn_Checked(object sender, RoutedEventArgs e)
@@ -69,6 +79,11 @@ namespace XLZ_Alignment_Tools
             TGT_File_label1.Visibility = Visibility.Hidden;
             TGT_File_tbx.IsEnabled = false;
             TGT_File_tbx.Visibility = Visibility.Hidden;
+
+            SRC_Column_label.IsEnabled = true;
+            SRC_Column_tbx.IsEnabled = true;
+            TGT_Column_label.IsEnabled = true;
+            TGT_Column_tbx.IsEnabled = true;
         }
 
         private void Generate_Click(object sender, RoutedEventArgs e)
@@ -139,10 +154,7 @@ namespace XLZ_Alignment_Tools
                 ResxFileParser.ResxFileParser TGT_RESX = new ResxFileParser.ResxFileParser();
                 TGT_RESX.FileParser(TGT_File_tbx.Text);
 
-
-                #region Generate Excel file to store resx file.
                 FileInfo Bilingual_Info = new FileInfo(Path.GetDirectoryName(SRC_File_tbx.Text) + @"\" + Path.GetFileNameWithoutExtension(SRC_File_tbx.Text) + ".xlsx");
-                #endregion
                 ExcelPackage Bilingual_Package = new ExcelPackage();
                 ExcelWorksheet Bilingual_WS = Bilingual_Package.Workbook.Worksheets.Add(Path.GetFileNameWithoutExtension(SRC_File_tbx.Text));
                 int current_position = 2;
@@ -164,7 +176,7 @@ namespace XLZ_Alignment_Tools
                 int processCount = 1;
                 for (int i = 2; i <= Bilingual_WS.Dimension.End.Row; i++)
                 {
-                    string[][] split_String = SentenceSplitter.SentenceSplitter.GetSplitedSegments(Bilingual_WS.Cells[i, 2].Text, Bilingual_WS.Cells[i, 3].Text, "en-US", "zh_CN");
+                    string[][] split_String = SentenceSplitter.SentenceSplitter.GetSplitedSegments(Bilingual_WS.Cells[i, 2].Text, Bilingual_WS.Cells[i, 3].Text, SRC_Code_Match.Groups["Code"].Value, TGT_Code_Match.Groups["Code"].Value);
                     for (int j = 0; j < split_String[0].Count(); j++)
                     {
                         string currentSRC_String = split_String[0][j];
@@ -183,6 +195,7 @@ namespace XLZ_Alignment_Tools
             #region Excel
             if (ByExcel_rBtn.IsChecked == true)
             {
+                int StartRow_Position = int.Parse(Start_Row_tbx.Text);
                 FileInfo Bilingual_Info = new FileInfo(SRC_File_tbx.Text);
                 ExcelPackage Bilingual_Package = new ExcelPackage(Bilingual_Info);
 
@@ -191,9 +204,9 @@ namespace XLZ_Alignment_Tools
                 for (int z = 1; z <= Bilingual_Package.Workbook.Worksheets.Count; z++)
                 {
                     ExcelWorksheet Bilingual_WS = Bilingual_Package.Workbook.Worksheets[z];
-                    for (int i = 2; i <= Bilingual_WS.Dimension.End.Row; i++)
+                    for (int i = StartRow_Position; i <= Bilingual_WS.Dimension.End.Row; i++)
                     {
-                        string[][] split_String = SentenceSplitter.SentenceSplitter.GetSplitedSegments(Bilingual_WS.Cells[i, 1].Text, Bilingual_WS.Cells[i, 2].Text, "en-US", "zh_CN");
+                        string[][] split_String = SentenceSplitter.SentenceSplitter.GetSplitedSegments(Bilingual_WS.Cells[SRC_Column_tbx.Text + i].Text, Bilingual_WS.Cells[TGT_Column_tbx.Text + i].Text, SRC_Code_Match.Groups["Code"].Value, TGT_Code_Match.Groups["Code"].Value);
                         for (int j = 0; j < split_String[0].Count(); j++)
                         {
                             string currentSRC_String = split_String[0][j];
@@ -202,6 +215,7 @@ namespace XLZ_Alignment_Tools
                             var TU = ReviewXLZ.AddTransUnit(new XliffTransUnit((ReviewXLZ.TransUnits.Count + 1).ToString(), true), true);
                             TU.SourceRaw = System.Security.SecurityElement.Escape(currentSRC_String);
                             TU.TranslationRaw = System.Security.SecurityElement.Escape(currentTGT_String);
+                            TU.MatchPercent = 100;
                             ReviewXLZ.AppendFormattingAfterTransUnit(TU, "\r\n");
                         }
                     }

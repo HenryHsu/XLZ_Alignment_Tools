@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:XLZ_Alignment_Tools"
         mc:Ignorable="d"
-        Title="MainWindow" Name="MainWin" Height="480" Width="640">
+        Title="XLZ Alignment Tools" Name="MainWin" Height="480" Width="640" >
     <Grid>
         <GroupBox x:Name="groupBox" Header="Description" Margin="5,5,5,0" VerticalAlignment="Top" Height="70"/>
         <GroupBox x:Name="groupBox1" Header="File Folder" Margin="5,80,5,0" VerticalAlignment="Top" Height="98">
             <Grid Height="77" Margin="1,1,1,1" VerticalAlignment="Bottom">
                 <Label x:Name="SRC_File_label" Content="Source File :" HorizontalAlignment="Left" Margin="108,5,0,42" Width="75"/>
-                <TextBox x:Name="SRC_File_tbx" Margin="185,8,17,46" TextWrapping="Wrap" Text="E:\Working\SIN\ENU\SNLOffice\ErrorResources.resx"/>
+                <TextBox x:Name="SRC_File_tbx" Margin="185,8,17,46" TextWrapping="Wrap"/>
                 <Label x:Name="TGT_File_label1" Content="Target File :" Margin="108,41,0,6" HorizontalAlignment="Left" Width="75"/>
-                <TextBox x:Name="TGT_File_tbx" Margin="185,44,17,10" TextWrapping="Wrap" Text="E:\Working\SIN\CHS\SNLOffice\CHS\ErrorResources.zh.resx"/>
+                <TextBox x:Name="TGT_File_tbx" Margin="185,44,17,10" TextWrapping="Wrap"/>
                 <RadioButton x:Name="ByMapplist_rBtn" Content="By File List" HorizontalAlignment="Left" Margin="10,12,0,0" VerticalAlignment="Top" Checked="ByMapplist_rBtn_Checked"/>
                 <RadioButton x:Name="ByFile_rBtn" Content="By Single File" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" Checked="ByFile_rBtn_Checked"/>
                 <RadioButton x:Name="ByExcel_rBtn" Content="From Excel" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top" Checked="ByExcel_rBtn_Checked"/>
@@ -21,12 +21,18 @@
 
             </Grid>
         </GroupBox>
-        <GroupBox x:Name="groupBox2" Header="Language Option" Margin="5,182,5,0" VerticalAlignment="Top" Height="88">
-            <Grid Height="63" Margin="1,1,1,1" VerticalAlignment="Top">
-                <Label x:Name="SRC_Lang_label" Content="Source Language : " HorizontalAlignment="Left" Margin="1,2,0,0" VerticalAlignment="Top"/>
-                <Label x:Name="TGT_Lang_label" Content="Target Language : " HorizontalAlignment="Left" Margin="3,32,0,0" VerticalAlignment="Top"/>
-                <ComboBox x:Name="SRC_Cbox" HorizontalAlignment="Left" Margin="110,4,0,0" VerticalAlignment="Top" Width="auto" Loaded="LangaugeCode_Loaded"/>
-                <ComboBox x:Name="TGT_Cbox" HorizontalAlignment="Left" Margin="110,35,0,0" VerticalAlignment="Top" Width="auto" Loaded="LangaugeCode_Loaded"/>
+        <GroupBox x:Name="groupBox2" Header="Language Option" Margin="5,177,5,0" VerticalAlignment="Top" Height="124">
+            <Grid Margin="1,4,1,0">
+                <Label x:Name="SRC_Lang_label" Content="Source Language : " HorizontalAlignment="Left" Margin="1,39,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="TGT_Lang_label" Content="Target Language : " HorizontalAlignment="Left" Margin="1,69,0,0" VerticalAlignment="Top"/>
+                <ComboBox x:Name="SRC_Cbox" HorizontalAlignment="Left" Margin="110,41,0,0" VerticalAlignment="Top" Width="auto" Loaded="LangaugeCode_Loaded"/>
+                <ComboBox x:Name="TGT_Cbox" HorizontalAlignment="Left" Margin="110,72,0,0" VerticalAlignment="Top" Width="auto" Loaded="LangaugeCode_Loaded"/>
+                <Label x:Name="SRC_Column_label" Content="Source ColumnNo :" HorizontalAlignment="Left" Margin="1,6,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="TGT_Column_label" Content="Target ColumnNo :" HorizontalAlignment="Left" Margin="170,6,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="SRC_Column_tbx" HorizontalAlignment="Left" Height="20" Margin="114,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44" ToolTip="填入 Source 的行號，例如A, B, C"/>
+                <TextBox x:Name="TGT_Column_tbx" HorizontalAlignment="Left" Height="20" Margin="283,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44" ToolTip="填入 Translation 的行號，例如A, B, C"/>
+                <Label x:Name="Start_Row_label" Content="Start Row :" HorizontalAlignment="Left" Margin="342,6,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="Start_Row_tbx" HorizontalAlignment="Left" Height="20" Margin="413,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44" ToolTip="填入從哪一行開始"/>
             </Grid>
         </GroupBox>
 
