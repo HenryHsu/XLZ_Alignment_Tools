@@ -200,26 +200,43 @@ namespace XLZ_Alignment_Tools
                 ExcelPackage Bilingual_Package = new ExcelPackage(Bilingual_Info);
 
                 XLZDocument ReviewXLZ = new XLZDocument(SRC_Code_Match.Groups["Code"].Value, "", TGT_Code_Match.Groups["Code"].Value);
+                XLZDocument NewXLZ = new XLZDocument(SRC_Code_Match.Groups["Code"].Value, "", TGT_Code_Match.Groups["Code"].Value);
                 int processCount = 1;
                 for (int z = 1; z <= Bilingual_Package.Workbook.Worksheets.Count; z++)
                 {
                     ExcelWorksheet Bilingual_WS = Bilingual_Package.Workbook.Worksheets[z];
                     for (int i = StartRow_Position; i <= Bilingual_WS.Dimension.End.Row; i++)
                     {
-                        string[][] split_String = SentenceSplitter.SentenceSplitter.GetSplitedSegments(Bilingual_WS.Cells[SRC_Column_tbx.Text + i].Text, Bilingual_WS.Cells[TGT_Column_tbx.Text + i].Text, SRC_Code_Match.Groups["Code"].Value, TGT_Code_Match.Groups["Code"].Value);
-                        for (int j = 0; j < split_String[0].Count(); j++)
+                        if (Bilingual_WS.Cells[TGT_Column_tbx.Text + i].Text.Length < 1)
                         {
-                            string currentSRC_String = split_String[0][j];
-                            string currentTGT_String = split_String[1][j];
-                            processCount++;
-                            var TU = ReviewXLZ.AddTransUnit(new XliffTransUnit((ReviewXLZ.TransUnits.Count + 1).ToString(), true), true);
-                            TU.SourceRaw = System.Security.SecurityElement.Escape(currentSRC_String);
-                            TU.TranslationRaw = System.Security.SecurityElement.Escape(currentTGT_String);
-                            TU.MatchPercent = 100;
-                            ReviewXLZ.AppendFormattingAfterTransUnit(TU, "\r\n");
+                            string[][] split_String = SentenceSplitter.SentenceSplitter.GetSplitedSegments(Bilingual_WS.Cells[SRC_Column_tbx.Text + i].Text, Bilingual_WS.Cells[SRC_Column_tbx.Text + i].Text, SRC_Code_Match.Groups["Code"].Value, TGT_Code_Match.Groups["Code"].Value);
+                            for (int j = 0; j < split_String[0].Count(); j++)
+                            {
+                                string currentSRC_String = split_String[0][j];
+                                var TU = NewXLZ.AddTransUnit(new XliffTransUnit((NewXLZ.TransUnits.Count + 1).ToString(), true), true);
+                                TU.SourceRaw = System.Security.SecurityElement.Escape(currentSRC_String);
+                                NewXLZ.AppendFormattingAfterTransUnit(TU, "\r\n");
+                            }
+
+                        }
+                        else
+                        {
+                            string[][] split_String = SentenceSplitter.SentenceSplitter.GetSplitedSegments(Bilingual_WS.Cells[SRC_Column_tbx.Text + i].Text, Bilingual_WS.Cells[TGT_Column_tbx.Text + i].Text, SRC_Code_Match.Groups["Code"].Value, TGT_Code_Match.Groups["Code"].Value);
+                            for (int j = 0; j < split_String[0].Count(); j++)
+                            {
+                                string currentSRC_String = split_String[0][j];
+                                string currentTGT_String = split_String[1][j];
+                                processCount++;
+                                var TU = ReviewXLZ.AddTransUnit(new XliffTransUnit((ReviewXLZ.TransUnits.Count + 1).ToString(), true), true);
+                                TU.SourceRaw = System.Security.SecurityElement.Escape(currentSRC_String);
+                                TU.TranslationRaw = System.Security.SecurityElement.Escape(currentTGT_String);
+                                TU.MatchPercent = 100;
+                                ReviewXLZ.AppendFormattingAfterTransUnit(TU, "\r\n");
+                            }
                         }
                     }
-                    ReviewXLZ.Save(Path.GetDirectoryName(SRC_File_tbx.Text) + @"\" + Path.GetFileNameWithoutExtension(SRC_File_tbx.Text) + "_Sheet"+z.ToString()+".xlz");
+                    NewXLZ.Save(Path.GetDirectoryName(SRC_File_tbx.Text) + @"\" + Path.GetFileNameWithoutExtension(SRC_File_tbx.Text) + "_Sheet" + z.ToString() + "_New.xlz");
+                    ReviewXLZ.Save(Path.GetDirectoryName(SRC_File_tbx.Text) + @"\" + Path.GetFileNameWithoutExtension(SRC_File_tbx.Text) + "_Sheet"+z.ToString()+"_Review.xlz");
                 }
             }
             #endregion
